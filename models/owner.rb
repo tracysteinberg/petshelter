@@ -3,8 +3,8 @@ require_relative('../db/sql_runner.rb')
   
 class Owner
 
-  attr_reader(:owner_id, :owner_photo, :type_id)
-  attr_accessor(:first_name, :last_name, :pet_type)
+  attr_reader(:owner_id, :first_name, :last_name, :pet_type, :owner_photo)
+  attr_accessor()
 
   def initialize(details)
     @owner_id = details['owner_id'].to_i
@@ -12,7 +12,6 @@ class Owner
     @last_name = details['last_name']
     @pet_type = details['pet_type']
     @owner_photo = details['owner_photo']
-    @type_id = details['type_id'].to_i
   end
 
   def save()
@@ -20,16 +19,16 @@ class Owner
       (first_name, last_name, pet_type, owner_photo) 
       VALUES 
       ($1, $2, $3, $4) 
-      RETURNING id;"
-      values = [@first_name, @last_name, @pet_type, @animal_photo]
+      RETURNING owner_id;"
+      values = [@first_name, @last_name, @pet_type, @owner_photo]
       owner = SqlRunner.run(sql, values)
-      @id = owner[0]['owner_id'].to_i
+      @owner_id = owner[0]['owner_id'].to_i
     end
 
     def pets
       sql = "SELECT * FROM pets
-             WHERE house_id = $1;"
-      values = [@id]
+             WHERE owner_id = $1;"
+      values = [@owner_id]
       result = Pets.map_items(sql, values)
       return result
     end
@@ -50,7 +49,7 @@ class Owner
 
     def self.map_items(sql, values)
       owners = SqlRunner.run( sql, values )
-      result = owners.map { |owner| Owners.new( house ) }
+      result = owners.map { |owner| Owners.new( owner ) }
       return result
     end
 

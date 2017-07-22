@@ -1,0 +1,13 @@
+<h2>Registered Shelter Pets</h2>
+<% @result.each do |pets| %>
+<p>Name: <%=pets.pet_name%></p>
+<p>Type: <%=pets.pet_type%></p>
+<p>Breed: <%=pets.breed%></p>
+<p>Sex:  <%=pets.sex%></p>
+<p>Age: <%=pets.age%></p>
+<p>Adoptable?: <%=pets.adoptable%></p>
+<p>Admission Date: <%=pets.admission%></p>
+
+<% end %>
+
+

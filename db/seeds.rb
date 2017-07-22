@@ -1,61 +1,86 @@
 require_relative('../models/pet.rb')
 require_relative('../models/owner.rb')
-require_relative('../models/type.rb')
-require_relative('../models/match.rb')
+require('pry-byebug')
+# require_relative('../models/type.rb')
+# require_relative('../models/match.rb')
 
 Pet.delete_all
 Owner.delete_all
-Type.delete_all
-Match.delete_all
+# Pet_Type.delete_all
+
+
+owner1 = Owner.new({'first_name' => 'Captain', 'last_name' => 'Hook', 'pet_type' => 'parrot',
+ 'owner_photo' => 
+  "http://mult-online.ru/posters/260_347_90_1/uploads/posts/2011-03/thumbs/1299849073_kapitan-huk.jpg" })
+owner1.save
+
+owner2 = Owner.new({'first_name' => 'Dick', 'last_name' => 'Whittington', 'pet_type' => 'cat',
+  'owner_photo' => 
+  "http://www.fermanaghomagh.com/app/uploads/2015/07/dick-whittington.jpg" })
+owner2.save
+
+owner3 = Owner.new({'first_name' => 'Wallace',  'pet_type' => 'dog', 'owner_photo' => 
+  "https://vignette4.wikia.nocookie.net/wallaceandgromit/images/3/3e/Wallace-482x298.jpg/revision/latest/scale-to-width-down/299?cb=20140526031303" })
+owner3.save
 
 
 
-house1 = House.new({'name' => "Hufflepuff", 'logo' => 'https://vignette1.wikia.nocookie.net/harrypotter/images/6/62/Download_%289%29.jpg/revision/latest?cb=20160729145653'})
-house1.save
-
-house2 = House.new({'name' => "Ravenclaw", 'logo' => "https://vignette4.wikia.nocookie.net/harrypotter/images/2/28/Download_%284%29.jpg/revision/latest?cb=20160729145945"})
-house2.save
-
-house3 = House.new({'name' => "Gryffindor", 'logo' => 'https://vignette2.wikia.nocookie.net/harrypotter/images/e/ee/Gryffindor_Crest-0.jpg/revision/latest?cb=20160729145529'})
-house3.save
-
-house4 = House.new({'name' => "Slytherin", 'logo' => 'https://vignette1.wikia.nocookie.net/harrypotter/images/7/72/Ccd53034-c798-452a-8032-f28e06250d8f.jpg/revision/latest/scale-to-width-down/160?cb=20160729150848'})
-house4.save
-
-house5 = House.new({'name' => "Codeclan", 'logo' => 'https://pbs.twimg.com/profile_images/606015765700091905/dv5RE0l9.jpg'})
-house5.save
-
-student1 = Student.new( {
-  'first_name' => 'Harry',
-  'last_name' => 'Potter',
-  'age' => '11',
-  'house_id' => house3.id
+pet1 = Pet.new( {
+  'pet_name' => 'Cat',
+  'pet_type' => 'cat',
+  'breed' => 'Bombay',
+  'sex' => 'female',
+  'age' => '3',
+  'adoptable' => 'Yes',
+  'admission' => '25 Nov 2016',
+  'pet_photo' => "https://www.pets4homes.co.uk/images/breeds/70/large/1c37029d04e0586b668fcf65df836cba.jpg",
+  'owner_id' => owner2.owner_id
   } )
-student1.save
+pet1.save
 
-student2 = Student.new( {
-  'first_name' => 'Cedric',
-  'last_name' => 'Diggory',
-  'age' => '17',
-  'house_id' => house1.id
+pet2 = Pet.new( {
+  'pet_name' => 'Gromit',
+  'pet_type' => 'dog',
+  'breed' => 'Beagle',
+  'sex' => 'male',
+  'age' => '8',
+  'adoptable' => 'Yes',
+  'admission' => '4 Feb 2017',
+  'pet_photo' => "http://apps.watershed.co.uk/shared/imagecache/appimages/1940/default/1-1/600/16/08/gromit4.jpg",
+  'owner_id' => owner3.owner_id
   } )
-student2.save
+pet2.save
 
-student3 = Student.new( {
-  'first_name' => 'Luna',
-  'last_name' => 'Lovegood',
-  'age' => '11',
-  'house_id' => house2.id
+pet3 = Pet.new( {
+  'pet_name' => 'Pretty Polly',
+  'pet_type' => 'parrot',
+  'breed' => 'Eclectus',
+  'sex' => 'male',
+  'age' => '10',
+  'adoptable' => 'Yes',
+  'admission' => '13 June 2017',
+  'owner_id' => owner1.owner_id,
+  'pet_photo' => "https://s-media-cache-ak0.pinimg.com/736x/19/93/2c/19932cc2fca5e80076ee5399209bd32e--captain-hook-pirates.jpg"
   } )
-student3.save
+pet3.save
 
-student3 = Student.new( {
-  'first_name' => 'Draco',
-  'last_name' => 'Malfoy',
-  'age' => '11',
-  'house_id' => house4.id
+pet4 = Pet.new( {
+  'pet_name' => 'Nemo',
+  'pet_type' => 'fish',
+  'breed' => 'Clown',
+  'sex' => 'male',
+  'age' => '1',
+  'adoptable' => 'No',
+  'admission' => '4 July 2017',
+  'owner_id' => owner1.owner_id,
+  'pet_photo' => "https://vignette4.wikia.nocookie.net/pixar/images/8/8d/Nemo_Promo_1.png/revision/latest?cb=20160710221424"
   } )
-student3.save
+pet4.save
+
+
+
+
+
 
 # student1.age = 12
 # student1.update
