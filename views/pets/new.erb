@@ -1,0 +1,61 @@
+<form method="post" action="/pets">
+  <label for="name-field">Name:</label>
+  <input
+  type="text"
+  name="name"
+  id="name-field"
+  />
+
+  <label for="pet_type">Pet Type:</label>
+  <input
+  type="text"
+  name="pet_type"
+  id="pet-type-field"
+  />
+
+  <label for="pet_breed">Pet Breed:</label>
+  <input
+  type="text"
+  name="pet_breed"
+  id="pet-breed-field"
+  />
+  <label for="pet_sex">Pet Sex:</label>
+  <input
+  type="text"
+  name="pet_sex"
+  id="pet-sex-field"
+  />
+
+  <label for="pet_age">Pet Age:</label>
+  <input
+  type="text"
+  name="pet_age"
+  id="pet-age-field"
+  />
+
+  <label for="pet_adoptable">Adoptable?:</label>
+  <input
+  type="text"
+  name="pet_adoptable"
+  id="pet-adoptable-field"
+  />
+
+  <label for="pet_admission">Admission:</label>
+  <input
+  type="text"
+  name="pet_admission"
+  id="pet-admission-field"
+  />
+
+
+
+
+  <!-- This is the drop down menu. Value is they hash value and name is the hash key -->
+    <label for="owner-selection">Owner:</label>
+    <select name="owner_id" id="owner-selection">
+      <% @owners.each do |owner| %>
+      <option value="<%=owner.owner_id%>"><%=owner.last_name%></option>
+      <% end %>
+    </select>
+
+    <input type="submit" value="Add Pet">

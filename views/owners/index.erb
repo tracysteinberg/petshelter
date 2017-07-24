@@ -1,10 +1,19 @@
 
 <h2>Registered Pet Owners</h2>
+<nav>
+  <a href="/owners/new">Add Owner</a>
+</nav>
 <% @result.each do |owner| %>
 <p>First Name: <%=owner.first_name%></p>
 <p>Last Name: <%=owner.last_name%></p>
 <p>Pet Wanted: <%=owner.pet_type%></p>
 <img src="<%=owner.owner_photo%>"/>
+<p>
+  <form action="/owners/<%= owner.owner_id %>/delete" method="POST">
+    <input class="btn btn--danger" type="submit" value="delete" />
+  </form>
+</p>
+<hr/>
 <% end %>
 
 

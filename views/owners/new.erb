@@ -20,13 +20,15 @@
   id="pet-type-field"
   />
 
-<!-- This is the drop down menu. Value is they hash value and name is the hash key -->
-  <label for="pet-selection">Pet:</label>
-  <select name="pet_id" id="pet-selection">
-    <% @pets.each do |pet| %>
-    <option value="<%=pet.id%>"><%=pet.name%></option>
-    <% end %>
-  </select>
+  <!-- This is the drop down menu. Value is they hash value and name is the hash key -->
+    <label for="pet-selection">Pet:</label>
+    <select name="pet_id" id="pet-selection">
+      <% @pets.each do |pet| %>
+      <option value="<%=pet.pet_id%>"><%=pet.pet_name%></option>
+      <% end %>
+    </select>
 
-  <input type="submit" value="Add Owner">
+    <input type="submit" value="Add Owner">
+
 </form>
+

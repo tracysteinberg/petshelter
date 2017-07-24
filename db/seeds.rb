@@ -19,7 +19,7 @@ owner2 = Owner.new({'first_name' => 'Dick', 'last_name' => 'Whittington', 'pet_t
   "http://www.fermanaghomagh.com/app/uploads/2015/07/dick-whittington.jpg" })
 owner2.save
 
-owner3 = Owner.new({'first_name' => 'Wallace',  'pet_type' => 'dog', 'owner_photo' => 
+owner3 = Owner.new({'first_name' => 'Wallace',  'last_name' => '??', 'pet_type' => 'dog', 'owner_photo' => 
   "https://vignette4.wikia.nocookie.net/wallaceandgromit/images/3/3e/Wallace-482x298.jpg/revision/latest/scale-to-width-down/299?cb=20140526031303" })
 owner3.save
 

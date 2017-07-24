@@ -1,6 +1,8 @@
 
 <h2>Registered Shelter Pets</h2>
-
+<nav>
+  <a href="/pets/new">Add Pet</a>
+</nav>
 <% @result.each do |pet| %>
   <p>Name: <%=pet.pet_name%></p>
   <p>Type: <%=pet.pet_type%></p>
@@ -10,7 +12,12 @@
   <p>Adoptable?: <%=pet.adoptable%></p>
   <p>Admission Date: <%=pet.admission%></p>
   <img src="<%=pet.pet_photo%>"/>
-  <hr/>
+  <p>
+    <form action="/pets/<%= pet.pet_id %>/delete" method="POST">
+      <input class="btn btn--danger" type="submit" value="delete" />
+    </form>
+  </p>
+<hr/>
 <% end %>
 
 
