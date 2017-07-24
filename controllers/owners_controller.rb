@@ -25,6 +25,26 @@ post '/owners/:owner_id/delete' do
   redirect to("/owners")
 end
 
+post 'owners/:owner_id' do
+  Owner.update(params[:owner_id])
+  redirect to("owners")
+end
+
+
+get '/owners/:owner_id/edit' do
+  @id = params['owner_id']
+  erb(:"owners/edit")
+end
+
+post '/owners/:owner_id' do
+  owner = Owner.new(params)
+  owner.update
+  redirect to("owners")
+end
+
+
+
+
 # get '/zombies/:id' do
 #   @zombie = Zombie.find( params[:id ])
 #   @victims = @zombie.victims

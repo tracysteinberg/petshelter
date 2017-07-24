@@ -25,8 +25,28 @@ class Owner
       @owner_id = owner[0]['owner_id'].to_i
     end
 
+    def update()
+      sql = "UPDATE owners 
+      SET
+      first_name = $1,
+      last_name = $2,
+      pet_type = $3,
+      owner_photo = $4
+      WHERE owner_id = $5;"
+      values = [@first_name,  @last_name, @pet_type, @owner_photo,  @owner_id]
+      SqlRunner.run( sql, values )
+    end
+
     def pets
       sql = "SELECT * FROM pets
+             WHERE owner_id = $1;"
+      values = [@owner_id]
+      result = Pets.map_items(sql, values)
+      return result
+    end
+
+    def delete()
+      sql = "DELETE FROM pets
              WHERE owner_id = $1;"
       values = [@owner_id]
       result = Pets.map_items(sql, values)

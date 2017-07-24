@@ -25,6 +25,21 @@ post '/pets/:pet_id/delete' do
   Pet.destroy(params[:pet_id])
   redirect to("/pets")
 end
+
+get '/pets/:pet_id/edit' do
+  @id = params['pet_id']
+  erb(:"pets/edit")
+end
+
+post '/pets/:pet_id' do
+  pet = Pet.new(params)
+  pet.update
+  redirect to("pets")
+end
+
+
+
+
 # get '/pets/new' do
 #   @pets = Pet.all
 # erb(:new)

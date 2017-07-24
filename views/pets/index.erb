@@ -13,8 +13,13 @@
   <p>Admission Date: <%=pet.admission%></p>
   <img src="<%=pet.pet_photo%>"/>
   <p>
-    <form action="/pets/<%= pet.pet_id %>/delete" method="POST">
-      <input class="btn btn--danger" type="submit" value="delete" />
+    <form action="/pets/<%= pet.pet_id %>/delete" method="post">
+      <input class="pets" type="submit" value="delete" />
+    </form>
+  </p>
+  <p>
+    <form action="/pets/<%= pet.pet_id %>/edit" method="get">
+      <input class="pets" type="submit" value="edit" />
     </form>
   </p>
 <hr/>

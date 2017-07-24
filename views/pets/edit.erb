@@ -1,6 +1,4 @@
-
-<form method="post" action="/pets/<%=@id%>">
-
+<form method="post" action="/pets/">
   <label for="name-field">Name:</label>
   <input
   type="text"
@@ -49,15 +47,7 @@
   id="pet-admission-field"
   />
 
+  <input type="submit" value="Update Pet"/>
+  </form>
 
-
-
-  <!-- This is the drop down menu. Value is they hash value and name is the hash key -->
-    <label for="owner-selection">Owner:</label>
-    <select name="owner_id" id="owner-selection">
-      <% @owners.each do |owner| %>
-      <option value="<%=owner.owner_id%>"><%=owner.last_name%></option>
-      <% end %>
-    </select>
-
-    <input type="submit" value="Add Pet">
+   

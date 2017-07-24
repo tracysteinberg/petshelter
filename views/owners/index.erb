@@ -9,8 +9,13 @@
 <p>Pet Wanted: <%=owner.pet_type%></p>
 <img src="<%=owner.owner_photo%>"/>
 <p>
-  <form action="/owners/<%= owner.owner_id %>/delete" method="POST">
-    <input class="btn btn--danger" type="submit" value="delete" />
+  <form action="/owners/<%= owner.owner_id %>/delete" method="post">
+    <input class="owners" type="submit" value="delete" />
+  </form>
+</p>
+<p>
+  <form action="/owners/<%= owner.owner_id %>/edit" method="get">
+    <input class="owners" type="submit" value="edit" />
   </form>
 </p>
 <hr/>
