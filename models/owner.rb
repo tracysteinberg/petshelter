@@ -49,7 +49,7 @@ class Owner
 
     def self.map_items(sql, values)
       owners = SqlRunner.run( sql, values )
-      result = owners.map { |owner| Owners.new( owner ) }
+      result = owners.map { |owner| Owner.new( owner ) }
       return result
     end
 

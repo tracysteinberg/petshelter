@@ -1,9 +1,10 @@
-<h2>Registered Pet Owners</h2>
-<% @result.each do |owners| %>
-<p>First Name: <%=owners.first_name%></p>
-<p>Last Name: <%=owners.last_name%></p>
-<p>Pet Wanted: <%=owners.pet_type%></p>
 
+<h2>Registered Pet Owners</h2>
+<% @result.each do |owner| %>
+<p>First Name: <%=owner.first_name%></p>
+<p>Last Name: <%=owner.last_name%></p>
+<p>Pet Wanted: <%=owner.pet_type%></p>
+<img src="<%=owner.owner_photo%>"/>
 <% end %>
 
 

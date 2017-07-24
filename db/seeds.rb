@@ -26,11 +26,11 @@ owner3.save
 
 
 pet1 = Pet.new( {
-  'pet_name' => 'Cat',
+  'pet_name' => 'Boots',
   'pet_type' => 'cat',
   'breed' => 'Bombay',
   'sex' => 'female',
-  'age' => '3',
+  'age' => '203',
   'adoptable' => 'Yes',
   'admission' => '25 Nov 2016',
   'pet_photo' => "https://www.pets4homes.co.uk/images/breeds/70/large/1c37029d04e0586b668fcf65df836cba.jpg",
@@ -55,7 +55,7 @@ pet3 = Pet.new( {
   'pet_name' => 'Pretty Polly',
   'pet_type' => 'parrot',
   'breed' => 'Eclectus',
-  'sex' => 'male',
+  'sex' => 'female',
   'age' => '10',
   'adoptable' => 'Yes',
   'admission' => '13 June 2017',
