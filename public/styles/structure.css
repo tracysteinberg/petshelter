@@ -1,5 +1,5 @@
 body {
-  background: #000080 ;
+  background: #5F9F9F ;
   background-size: 100%;
   background-repeat: no-repeat;
   color: papayawhip;
@@ -9,15 +9,26 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Special Elite', cursive;
+  font-family: 'Luckiest Guy', cursive;
   margin: 0px;
   padding: 0px;
+  color: #000080;
+  font-size: 4.0em;
+
 }
 
 h1 {
-  font-size: 1.8em;
-  color: darkred;
+  font-size: 6.0em;
+  color: #000080;
   margin-bottom: 20px;
+}
+
+.bubbles h1 {
+position: center;
+margin: 1em 0 0;
+font-family: 'Luckiest Guy', cursive;
+color: #000080;
+z-index: 2;
 }
 
 a, a:visited {
@@ -56,7 +67,16 @@ main {
 
 #content {
   border-left: 1px solid darkred;
+  color: #000080;
   padding-left: 25px;
 }
 
- d
+ img {
+  height: 400px;
+  width: auto;
+}
+ 
+ .pet-and-owner img {
+  height: auto;
+  width: auto;
+ }

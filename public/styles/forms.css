@@ -4,18 +4,19 @@ input[type="submit"] {
 }
 
 select {
+ display: block;
  width: 150px;
  padding: 5px 35px 5px 5px;
  margin: 15px 0;
  font-size: 0.8em;
  -webkit-appearance: none;
- /*background: url('/images/hazard.png') 96% / 15% no-repeat papayawhip;*/
  font-family: 'Merriweather', serif;
- border: 1px solid #eee;
- display: block;
+ border: 1px solid #000000;
+ color: #000080;
+
 } 
 
 :focus {
-  outline-color: transparent;
+  outline-color: #000080;
   outline-style: none;
 }

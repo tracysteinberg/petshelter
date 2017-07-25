@@ -1,4 +1,4 @@
-cstd, th {
+td, th {
   text-align: left;
 }
 
@@ -18,7 +18,3 @@ table {
 table a {
   text-decoration: underline;
 }
-/*
-table a:visited {
-  text-decoration: underline;
-}*/

@@ -6,18 +6,21 @@
       <title>Pet Shelter Success Stories</title>
     </head>
     <body>
-      <img class="cat and owner" src=
-      "https://i.ytimg.com/vi/avLqrGOH5zA/hqdefault.jpg"
-       alt "cat/>"
-      <img class="dog and owner" src=
+      <img class="cat_and_owner" src=
+      "https://static.comicvine.com/uploads/scale_small/11/111746/4339141-filepicker_dxbwcidftya9ewwporn6_dick_whittington.jpg"
+       alt="cat"/>
+      <img class="dog_and_owner" src=
       "http://news.images.itv.com/image/file/396006/image_update_img.jpg"
-      alt "dog/>"
-      <img class="parrot and owner" src=
+      alt="dog/">
+      <img class="parrot_and_owner" src=
       "http://www.piratesforhire.com/wp-content/uploads/2014/04/Morgan.jpg"
-      alt "parrot/>"
-      <img class="fish and no owner" src=
+      alt="parrot"/>
+      <img class="fish_and_no_owner" src=
       "https://vignette4.wikia.nocookie.net/disney/images/a/aa/Nemo-FN.png/revision/latest/scale-to-width-down/516?cb=20160202205008"
-       alt "fish/>"
+       alt="fish"/>
+       <img class="bear_and_owner" src=
+       "https://s-media-cache-ak0.pinimg.com/originals/6e/88/ab/6e88abe0740c2406d8e56d6ddff52e80.png"
+       alt="bear"/>
 
 <!--       <nav>
         <a href="/pets/new">Add Pet</a>   -->  </nav> -->

@@ -19,10 +19,13 @@ owner2 = Owner.new({'first_name' => 'Dick', 'last_name' => 'Whittington', 'pet_t
   "http://www.fermanaghomagh.com/app/uploads/2015/07/dick-whittington.jpg" })
 owner2.save
 
-owner3 = Owner.new({'first_name' => 'Wallace',  'last_name' => '??', 'pet_type' => 'dog', 'owner_photo' => 
+owner3 = Owner.new({'first_name' => 'Wallace',  'last_name' => 'Wensleydale', 'pet_type' => 'dog', 'owner_photo' => 
   "https://vignette4.wikia.nocookie.net/wallaceandgromit/images/3/3e/Wallace-482x298.jpg/revision/latest/scale-to-width-down/299?cb=20140526031303" })
 owner3.save
 
+owner4 = Owner.new({'first_name' => '',  'last_name' => 'The Brown Family', 'pet_type' => 'bear', 'owner_photo' => 
+  "http://brightstarbedtimestories.com/wp-content/uploads/2013/12/Paddington-bear-page3.jpg"})
+owner4.save
 
 
 pet1 = Pet.new( {
@@ -46,7 +49,7 @@ pet2 = Pet.new( {
   'age' => '8',
   'adoptable' => 'Yes',
   'admission' => '4 Feb 2017',
-  'pet_photo' => "http://apps.watershed.co.uk/shared/imagecache/appimages/1940/default/1-1/600/16/08/gromit4.jpg",
+  'pet_photo' => "https://apps.watershed.co.uk/shared/imagecache/appimages/1940/default/1-1/600/16/08/gromit4.jpg",
   'owner_id' => owner3.owner_id
   } )
 pet2.save
@@ -77,17 +80,16 @@ pet4 = Pet.new( {
   } )
 pet4.save
 
+pet5 = Pet.new( {
+  'pet_name' => 'Paddington',
+  'pet_type' => 'bear',
+  'breed' => 'Peruvian',
+  'sex' => 'male',
+  'age' => '50',
+  'adoptable' => 'Yes',
+  'admission' => '13 May 2017',
+  'owner_id' => owner4.owner_id,
+  'pet_photo' => "http://i.telegraph.co.uk/multimedia/archive/02888/paddington_2888171b.jpg"
+  } )
+pet5.save
 
-
-
-
-
-# student1.age = 12
-# student1.update
-# p student1
-# student1.delete
-# p Student.find(23)
-# p House.all
-
-# puts student1.house
-# p house1.students

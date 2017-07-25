@@ -36,15 +36,19 @@
 
       <img class="dick_whittington" src=
         "http://www.fermanaghomagh.com/app/uploads/2015/07/dick-whittington.jpg" 
-       alt "dick_whittington/>"
+       alt="dick_whittington"/>
       <img class="wallace" src=
         "https://vignette4.wikia.nocookie.net/wallaceandgromit/images/3/3e/Wallace-482x298.jpg/revision/latest/scale-to-width-down/299?cb=20140526031303" 
       
-      alt "wallace/>"
+      alt="wallace"/>
       <img class="captain_hook" src=
         "http://mult-online.ru/posters/260_347_90_1/uploads/posts/2011-03/thumbs/1299849073_kapitan-huk.jpg" 
-      alt "captain_hook/>
+      alt="captain_hook"/>
 
+      <img class="the_brown_family" src=
+      "http://brightstarbedtimestories.com/wp-content/uploads/2013/12/Paddington-bear-page3.jpg"
+      alt='the_brown_family'/>
+      
       <nav>
         <a href="/owners/new">Add Owner</a>
       </nav>

@@ -21,7 +21,7 @@
   />
 
   <!-- This is the drop down menu. Value is they hash value and name is the hash key -->
-    <label for="pet-selection">Pet:</label>
+    <label for="pet-selection">     Pet:</label>
     <select name="pet_id" id="pet-selection">
       <% @pets.each do |pet| %>
       <option value="<%=pet.pet_id%>"><%=pet.pet_name%></option>
