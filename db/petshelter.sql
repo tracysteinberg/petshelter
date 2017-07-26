@@ -45,6 +45,7 @@ CREATE TABLE matches
   pet_photo VARCHAR(255),
   owner_first_name VARCHAR(255),
   owner_last_name VARCHAR(255),
-  owner_photo VARCHAR(255)
+  owner_photo VARCHAR(255),
+  pet_and_owner_photo VARCHAR(255)
 
 );
