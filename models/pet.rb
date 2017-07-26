@@ -45,9 +45,10 @@ class Pet
       age = $5,
       adoptable = $6,
       admission = $7,
-      pet_photo = $8
+      pet_photo = $8,
       WHERE pet_id = $9;"
-      values = [@pet_name, @pet_type, @breed, @sex, @age, @adoptable, @admission, @pet_photo,  @pet_id]
+      values = [@pet_name, @pet_type, @breed, @sex, @age, @adoptable, @admission, @pet_photo,
+        @pet_id]
       SqlRunner.run( sql, values )
     end
 

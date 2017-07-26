@@ -36,8 +36,8 @@ pet1 = Pet.new( {
   'age' => '203',
   'adoptable' => 'Yes',
   'admission' => '25 Nov 2016',
-  'pet_photo' => "https://www.pets4homes.co.uk/images/breeds/70/large/1c37029d04e0586b668fcf65df836cba.jpg",
-  'owner_id' => owner2.owner_id
+  'owner_id' => owner2.owner_id,
+  'pet_photo' => "https://www.pets4homes.co.uk/images/breeds/70/large/1c37029d04e0586b668fcf65df836cba.jpg"
   } )
 pet1.save
 
@@ -49,8 +49,9 @@ pet2 = Pet.new( {
   'age' => '8',
   'adoptable' => 'Yes',
   'admission' => '4 Feb 2017',
-  'pet_photo' => "https://apps.watershed.co.uk/shared/imagecache/appimages/1940/default/1-1/600/16/08/gromit4.jpg",
-  'owner_id' => owner3.owner_id
+  'owner_id' => owner3.owner_id,
+  'pet_photo' => "https://apps.watershed.co.uk/shared/imagecache/appimages/1940/default/1-1/600/16/08/gromit4.jpg"
+
   } )
 pet2.save
 
@@ -92,4 +93,28 @@ pet5 = Pet.new( {
   'pet_photo' => "http://i.telegraph.co.uk/multimedia/archive/02888/paddington_2888171b.jpg"
   } )
 pet5.save
+
+
+# love1 = Pet.new( {
+#   'pet_match' => 'Dick Whittington and Boots'
+#   })
+# love1.save
+# love2 = Pet.new( {
+#   'pet_match' => 'Wallace and Gromit'
+#   })
+# love2.save
+# love3 = Pet.new( {
+#   'pet_match' => 'Captain Hook and Pretty Polly'
+#   })
+# love3.save
+# love4 = Pet.new({
+#    'pet_match' => 'Nemo'
+#   })
+# love4.save
+# love5 = Pet.new({
+#     'pet_match' => 'The Brown Family and Paddinton'
+#   })
+# love5.save
+
+
 
