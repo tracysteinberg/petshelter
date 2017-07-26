@@ -40,22 +40,5 @@ end
 
 
 
-# get '/pets/new' do
-#   @pets = Pet.all
-# erb(:new)
-# end
-
-# post '/pets' do
-#  pet1x = Pet.new(params)
-#  pet1x.save
-#  redirect '/pets'
-# end
-
-
-# get '/zombies/:id' do
-#   @zombie = Zombie.find( params[:id ])
-#   @victims = @zombie.victims
-#   erb( :"zombies/show")
-# end
 
 

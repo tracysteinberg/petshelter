@@ -95,26 +95,4 @@ pet5 = Pet.new( {
 pet5.save
 
 
-# love1 = Pet.new( {
-#   'pet_match' => 'Dick Whittington and Boots'
-#   })
-# love1.save
-# love2 = Pet.new( {
-#   'pet_match' => 'Wallace and Gromit'
-#   })
-# love2.save
-# love3 = Pet.new( {
-#   'pet_match' => 'Captain Hook and Pretty Polly'
-#   })
-# love3.save
-# love4 = Pet.new({
-#    'pet_match' => 'Nemo'
-#   })
-# love4.save
-# love5 = Pet.new({
-#     'pet_match' => 'The Brown Family and Paddinton'
-#   })
-# love5.save
-
-
 

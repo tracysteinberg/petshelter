@@ -45,10 +45,5 @@ end
 
 
 
-# get '/zombies/:id' do
-#   @zombie = Zombie.find( params[:id ])
-#   @victims = @zombie.victims
-#   erb( :"zombies/show")
-# end
 
 

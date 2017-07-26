@@ -12,34 +12,3 @@ get '/' do
 end
 
 
-
-# get '/' do
-#  @result = Pet.all
-#  erb(:index)
-# end
-
-# get '/' do
-#  @result = Owner.all
-#  erb(:index)
-# end
-
-
-
-# get '/petshelter' do
-#  @result = Owner.all
-#  erb(:index)
-# end
-
-
-
-
-# get '/owners/new' do
-#   @owners = Owner.all
-# erb(:new)
-# end
-
-# post '/petshelter' do
-#  pet1 = Pet.new(params)
-#  pet1.save
-#  redirect '/petshelter'
-# end
