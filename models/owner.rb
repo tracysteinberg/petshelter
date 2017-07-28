@@ -45,13 +45,15 @@ class Owner
       return result
     end
 
+   
+
     def delete()
-      sql = "DELETE FROM pets
-             WHERE owner_id = $1;"
+      sql = "DELETE FROM owners WHERE owner_id = $1;"
       values = [@owner_id]
-      result = Pet.map_items(sql, values)
-      return result
+      SqlRunner.run( sql, values)
+    
     end
+
 
     def self.all()
       sql = "SELECT * FROM owners;"
@@ -60,9 +62,9 @@ class Owner
       return result
     end
 
-    def self.find(id)
-      sql = "SELECT * FROM owners WHERE id = $1;"
-      values = [@id]
+    def self.find(owner_id)
+      sql = "SELECT * FROM owners WHERE owner_id = $1;"
+      values = [owner_id]
       result = self.map_items(sql, values).first
       return result
     end

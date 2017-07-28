@@ -21,9 +21,11 @@ post '/owners' do
 end
 
 post '/owners/:owner_id/delete' do
-  Owner.delete(params[:owner_id])
+  owner = Owner.find(params['owner_id'])
+  owner.delete
   redirect to("/owners")
 end
+
 
 post 'owners/:owner_id' do
   Owner.update(params[:owner_id])
