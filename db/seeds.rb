@@ -68,18 +68,18 @@ pet3 = Pet.new( {
   } )
 pet3.save
 
-pet4 = Pet.new( {
-  'pet_name' => 'Nemo',
-  'pet_type' => 'fish',
-  'breed' => 'Clown',
-  'sex' => 'male',
-  'age' => '1',
-  'adoptable' => 'No',
-  'admission' => '4 July 2017',
-  'owner_id' => owner1.owner_id,
-  'pet_photo' => "https://vignette4.wikia.nocookie.net/pixar/images/8/8d/Nemo_Promo_1.png/revision/latest?cb=20160710221424"
-  } )
-pet4.save
+# pet4 = Pet.new( {
+#   'pet_name' => 'Nemo',
+#   'pet_type' => 'fish',
+#   'breed' => 'Clown',
+#   'sex' => 'male',
+#   'age' => '1',
+#   'adoptable' => 'No',
+#   'admission' => '4 July 2017',
+#   'owner_id' => owner1.owner_id,
+#   'pet_photo' => "https://vignette4.wikia.nocookie.net/pixar/images/8/8d/Nemo_Promo_1.png/revision/latest?cb=20160710221424"
+#   } )
+# pet4.save
 
 pet5 = Pet.new( {
   'pet_name' => 'Paddington',

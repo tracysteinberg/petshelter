@@ -41,7 +41,7 @@ class Owner
       sql = "SELECT * FROM pets
              WHERE owner_id = $1;"
       values = [@owner_id]
-      result = Pets.map_items(sql, values)
+      result = Pet.map_items(sql, values)
       return result
     end
 
@@ -49,7 +49,7 @@ class Owner
       sql = "DELETE FROM pets
              WHERE owner_id = $1;"
       values = [@owner_id]
-      result = Pets.map_items(sql, values)
+      result = Pet.map_items(sql, values)
       return result
     end
 

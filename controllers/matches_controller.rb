@@ -3,7 +3,8 @@ require( 'sinatra/contrib/all' )
 # require_relative( '../models/owner.rb' )
 
 get '/matches' do
-  # @result = Owner.all
+  @owners = Owner.all
+  # @pets = Pet.all
   erb(:"matches/index")
 end
 

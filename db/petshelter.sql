@@ -39,13 +39,15 @@ CREATE TABLE pets
 CREATE TABLE matches
 (
   -- type_id SERIAL4 PRIMARY KEY,
-  -- pet_id SERIAL4 PRIMARY KEY,
-  -- owner_id SERIAL4 PRIMARY KEY,
+  pet_id SERIAL4 PRIMARY KEY,
   pet_name VARCHAR(255),
   pet_photo VARCHAR(255),
   owner_first_name VARCHAR(255),
   owner_last_name VARCHAR(255),
   owner_photo VARCHAR(255),
-  pet_and_owner_photo VARCHAR(255)
-
+  pet_and_owner_photo VARCHAR(255),
+  owner_id SERIAL4 REFERENCES owners(owner_id)
 );
+
+
+
