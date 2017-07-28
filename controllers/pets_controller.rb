@@ -28,9 +28,17 @@ post '/pets/:pet_id/delete' do
   redirect to("/pets")
 end
 
- 
+
+
+
+# post '/pets/:pet_id' do
+#   Pet.update(params[:pet_id])
+#   redirect to("pets")
+# end
+
+
 get '/pets/:pet_id/edit' do
-  @id = params['pet_id']
+  @pet = Pet.find(params['pet_id'])
   erb(:"pets/edit")
 end
 
@@ -39,6 +47,8 @@ post '/pets/:pet_id' do
   pet.update
   redirect to("pets")
 end
+ 
+
 
 
 

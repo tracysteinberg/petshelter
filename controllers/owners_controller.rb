@@ -27,10 +27,10 @@ post '/owners/:owner_id/delete' do
 end
 
 
-post 'owners/:owner_id' do
-  Owner.update(params[:owner_id])
-  redirect to("owners")
-end
+# post '/owners/:owner_id' do
+#   Owner.update(params[:owner_id])
+#   redirect to("owners")
+# end
 
 
 get '/owners/:owner_id/edit' do
