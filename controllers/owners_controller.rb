@@ -34,7 +34,7 @@ end
 
 
 get '/owners/:owner_id/edit' do
-  @id = params['owner_id']
+  @owner = Owner.find(params['owner_id'])
   erb(:"owners/edit")
 end
 

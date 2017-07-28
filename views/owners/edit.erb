@@ -1,9 +1,10 @@
-<form method="post" action="/owners/<%=@id%>">
+<form method="post" action="/owners/<%=@owner.owner_id%>">
   <label for="first-name-field">First Name:</label>
   <input
   type="text"
   name="first_name"
   id="first-name-field"
+  value="<%=@owner.first_name%>"
   />
 
   <label for="last-name-field">Last Name:</label>
@@ -11,6 +12,7 @@
   type="text"
   name="last_name"
   id="last-name-field"
+  value="<%=@owner.last_name%>"
   />
 
   <label for="pet_type">Pet Wanted:</label>
@@ -18,6 +20,7 @@
   type="text"
   name="pet_type"
   id="pet-type-field"
+  value="<%=@owner.pet_type%>"
   />
 
 
