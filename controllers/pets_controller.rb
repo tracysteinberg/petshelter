@@ -21,11 +21,14 @@ post '/pets' do
  redirect '/pets'
 end
 
+
 post '/pets/:pet_id/delete' do
-  Pet.destroy(params[:pet_id])
+  pet = Pet.find(params['pet_id'])
+  pet.delete
   redirect to("/pets")
 end
 
+ 
 get '/pets/:pet_id/edit' do
   @id = params['pet_id']
   erb(:"pets/edit")

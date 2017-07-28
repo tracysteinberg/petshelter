@@ -75,7 +75,7 @@ class Pet
       return result
     end
 
-    def self.find(id)
+    def self.find(pet_id)
       sql = "SELECT * FROM pets WHERE pet_id = $1;"
       values = [pet_id]
       result = self.map_items(sql, values).first

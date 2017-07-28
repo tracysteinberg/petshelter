@@ -21,7 +21,7 @@ post '/owners' do
 end
 
 post '/owners/:owner_id/delete' do
-  Owner.destroy(params[:owner_id])
+  Owner.delete(params[:owner_id])
   redirect to("/owners")
 end
 
