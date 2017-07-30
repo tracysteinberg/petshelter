@@ -16,7 +16,8 @@ CREATE TABLE owners
   owner_photo VARCHAR(255),
   first_name VARCHAR(255),
   last_name VARCHAR(255),
-  pet_type VARCHAR(255)
+  pet_type VARCHAR(255),
+  adopted_pet VARCHAR(255)
   -- type_id SERIAL4 REFERENCES types(id
 );
 

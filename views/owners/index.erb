@@ -7,6 +7,7 @@
 <p>First Name: <%=owner.first_name%></p>
 <p>Last Name: <%=owner.last_name%></p>
 <p>Pet Wanted: <%=owner.pet_type%></p>
+<p>Adopted Pet: <%=owner.adopted_pet%></p>
 <img src="<%=owner.owner_photo%>"/>
 <p>
   <form action="/owners/<%= owner.owner_id %>/delete" method="post">

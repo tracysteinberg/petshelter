@@ -23,6 +23,16 @@
   value="<%=@owner.pet_type%>"
   />
 
+  <label for="adopted-pet-field">Adopted Pet:</label>
+  <input
+  type="text"
+  name="adopted_pet"
+  id="adopted-pet-field"
+  value="<%=@owner.adopted_pet%>"
+  />
+
+
+
   <label for="owner-photo-field">Owner Photo:</label>
   <input
   type="text"
@@ -30,6 +40,7 @@
   id="owner-photo-field"
   value="<%=@owner.owner_photo%>"
   />
+
 
   <input type="submit" value="Update Owner"/>
   </form>
