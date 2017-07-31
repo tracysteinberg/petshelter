@@ -16,8 +16,7 @@ CREATE TABLE owners
   owner_photo VARCHAR(255),
   first_name VARCHAR(255),
   last_name VARCHAR(255),
-  pet_type VARCHAR(255),
-  adopted_pet VARCHAR(255)
+  pet_type VARCHAR(255)
   -- type_id SERIAL4 REFERENCES types(id
 );
 
@@ -32,23 +31,23 @@ CREATE TABLE pets
   adoptable VARCHAR(255),
   admission VARCHAR(255),
   pet_photo VARCHAR(255),
-  owner_id SERIAL4 REFERENCES owners(owner_id)
+  owner_id INT4 REFERENCES owners(owner_id) ON DELETE SET NULL
 );
 
 
 
-CREATE TABLE matches
-(
-  -- type_id SERIAL4 PRIMARY KEY,
-  pet_id SERIAL4 PRIMARY KEY,
-  pet_name VARCHAR(255),
-  pet_photo VARCHAR(255),
-  owner_first_name VARCHAR(255),
-  owner_last_name VARCHAR(255),
-  owner_photo VARCHAR(255),
-  pet_and_owner_photo VARCHAR(255),
-  owner_id SERIAL4 REFERENCES owners(owner_id)
-);
+-- CREATE TABLE matches
+-- (
+--   -- type_id SERIAL4 PRIMARY KEY,
+--   pet_id SERIAL4 PRIMARY KEY,
+--   pet_name VARCHAR(255),
+--   pet_photo VARCHAR(255),
+--   owner_first_name VARCHAR(255),
+--   owner_last_name VARCHAR(255),
+--   owner_photo VARCHAR(255),
+--   pet_and_owner_photo VARCHAR(255),
+--   owner_id SERIAL4 REFERENCES owners(owner_id)
+-- );
 
 
 

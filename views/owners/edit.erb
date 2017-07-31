@@ -23,14 +23,6 @@
   value="<%=@owner.pet_type%>"
   />
 
-  <label for="adopted-pet-field">Adopted Pet:</label>
-  <input
-  type="text"
-  name="adopted_pet"
-  id="adopted-pet-field"
-  value="<%=@owner.adopted_pet%>"
-  />
-
 
 
   <label for="owner-photo-field">Owner Photo:</label>
@@ -42,5 +34,12 @@
   />
 
 
+  <% @owner.pets.each do |pet| %>  
+    <p>Pet Name: <%=pet.pet_name%></p>
+    <img src="<%=pet.pet_photo%>"/>
+  <% end %>
+
   <input type="submit" value="Update Owner"/>
   </form>
+
+
